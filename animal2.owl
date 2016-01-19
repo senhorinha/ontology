@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/caio/ontologies/2015/3/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/caio/ontologies/2015/3/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#agressivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anfibios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aquatico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#assexuada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#braquial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#calmo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#caminha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#caracteristicas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#classe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cobertura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comportamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#concha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cutanea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#escamas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#habitat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#irracional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#locomoçao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mamiferos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#peixes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pelos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#penas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pulmonar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#raciocinio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#racional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rasteja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reproducao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#repteis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#respiraçao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#salta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sexuada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#terrestre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#voa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cobertoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comportamento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ehIrracional"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ehRacional"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#habitaMeio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maiorQue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#menorQue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#respiração"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seLocomove"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seReproduz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bulldog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crocodilo-anao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gavião"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#homem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jararaca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pinguim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rã-dardo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sapo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tilapia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tubarao-martelo"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#anfibios"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#aquatico"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#anfibios"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#terrestre"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#anfibios"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#cutanea"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#anfibios"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#pulmonar"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#anfibios"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ehIrracional"/>
+            <Class IRI="#irracional"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#anfibios"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seReproduz"/>
+            <Class IRI="#sexuada"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#aves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#aves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#voa"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#aves"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cobertoPor"/>
+            <Class IRI="#penas"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#aves"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#terrestre"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#aves"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#pulmonar"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#aves"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seReproduz"/>
+            <Class IRI="#sexuada"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#agressivo"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#calmo"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ehRacional"/>
+            <Class IRI="#irracional"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ehRacional"/>
+            <Class IRI="#racional"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#aquatico"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#terrestre"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#nada"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cobertoPor"/>
+            <Class IRI="#pelos"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#pulmonar"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mamiferos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seReproduz"/>
+            <Class IRI="#sexuada"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#peixes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#agressivo"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#peixes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#calmo"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#peixes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cobertoPor"/>
+            <Class IRI="#escamas"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#peixes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ehRacional"/>
+            <Class IRI="#irracional"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#peixes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#aquatico"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#peixes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#nada"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#repteis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#cobertoPor"/>
+            <Class IRI="#escamas"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#repteis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#repteis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#rasteja"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#repteis"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#pulmonar"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#repteis"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seReproduz"/>
+            <Class IRI="#sexuada"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#agressivo"/>
+        <Class IRI="#comportamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anfibios"/>
+        <Class IRI="#classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aquatico"/>
+        <Class IRI="#habitat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#assexuada"/>
+        <Class IRI="#reproducao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aves"/>
+        <Class IRI="#classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#braquial"/>
+        <Class IRI="#respiraçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#calmo"/>
+        <Class IRI="#comportamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#caminha"/>
+        <Class IRI="#locomoçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#classe"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cobertura"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comportamento"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#concha"/>
+        <Class IRI="#cobertura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cutanea"/>
+        <Class IRI="#respiraçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#escamas"/>
+        <Class IRI="#cobertura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#habitat"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#irracional"/>
+        <Class IRI="#raciocinio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#locomoçao"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mamiferos"/>
+        <Class IRI="#classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nada"/>
+        <Class IRI="#locomoçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#peixes"/>
+        <Class IRI="#classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pelos"/>
+        <Class IRI="#cobertura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#penas"/>
+        <Class IRI="#cobertura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulmonar"/>
+        <Class IRI="#respiraçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#raciocinio"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#racional"/>
+        <Class IRI="#raciocinio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rasteja"/>
+        <Class IRI="#locomoçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reproducao"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#repteis"/>
+        <Class IRI="#classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#respiraçao"/>
+        <Class IRI="#caracteristicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#salta"/>
+        <Class IRI="#locomoçao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sexuada"/>
+        <Class IRI="#reproducao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#terrestre"/>
+        <Class IRI="#habitat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#voa"/>
+        <Class IRI="#locomoçao"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#agressivo"/>
+        <Class IRI="#calmo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#anfibios"/>
+        <Class IRI="#aves"/>
+        <Class IRI="#mamiferos"/>
+        <Class IRI="#peixes"/>
+        <Class IRI="#repteis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#animal"/>
+        <Class IRI="#caracteristicas"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#aquatico"/>
+        <Class IRI="#terrestre"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#assexuada"/>
+        <Class IRI="#sexuada"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#braquial"/>
+        <Class IRI="#cutanea"/>
+        <Class IRI="#pulmonar"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#caminha"/>
+        <Class IRI="#nada"/>
+        <Class IRI="#rasteja"/>
+        <Class IRI="#salta"/>
+        <Class IRI="#voa"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#concha"/>
+        <Class IRI="#escamas"/>
+        <Class IRI="#pelos"/>
+        <Class IRI="#penas"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#irracional"/>
+        <Class IRI="#racional"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#mamiferos"/>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cobertoPor"/>
+            <Class IRI="#pelos"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#calmo"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ehRacional"/>
+            <Class IRI="#irracional"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#terrestre"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#pulmonar"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seReproduz"/>
+            <Class IRI="#sexuada"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#repteis"/>
+        <NamedIndividual IRI="#crocodilo-anao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#crocodilo-anao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#aves"/>
+        <NamedIndividual IRI="#gavião"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#voa"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#gavião"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#mamiferos"/>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#calmo"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cobertoPor"/>
+            <Class IRI="#pelos"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ehRacional"/>
+            <Class IRI="#racional"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#habitaMeio"/>
+            <Class IRI="#terrestre"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#respiração"/>
+            <Class IRI="#pulmonar"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seReproduz"/>
+            <Class IRI="#sexuada"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#repteis"/>
+        <NamedIndividual IRI="#jararaca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#rasteja"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#jararaca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#aves"/>
+        <NamedIndividual IRI="#pinguim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#seLocomove"/>
+            <Class IRI="#caminha"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#pinguim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anfibios"/>
+        <NamedIndividual IRI="#rã-dardo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#agressivo"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#rã-dardo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anfibios"/>
+        <NamedIndividual IRI="#sapo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#calmo"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#sapo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peixes"/>
+        <NamedIndividual IRI="#tilapia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#calmo"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#tilapia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peixes"/>
+        <NamedIndividual IRI="#tubarao-martelo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#comportamento"/>
+            <Class IRI="#agressivo"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#tubarao-martelo"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#maiorQue"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ehIrracional"/>
+        <ObjectProperty IRI="#ehRacional"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#menorQue"/>
+        <ObjectProperty IRI="#maiorQue"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cobertoPor"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comportamento"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehIrracional"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehRacional"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#habitaMeio"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maiorQue"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#menorQue"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#respiração"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seLocomove"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seReproduz"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cobertoPor"/>
+        <Class IRI="#cobertura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comportamento"/>
+        <Class IRI="#comportamento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehIrracional"/>
+        <Class IRI="#raciocinio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehRacional"/>
+        <Class IRI="#raciocinio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#habitaMeio"/>
+        <Class IRI="#habitat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maiorQue"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#menorQue"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#respiração"/>
+        <Class IRI="#reproducao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seLocomove"/>
+        <Class IRI="#locomoçao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seReproduz"/>
+        <Class IRI="#reproducao"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
